@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Cocotte | Menyu</title>
+    <link rel="stylesheet" href="menyu.css">
+    <link rel="icon" href="food\loqo3.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h1><a href="index.html">Ma Cocotte</a></h1>
+            </div>
+            <div class="language">
+                <button data-lang="az">AZ</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <a href="index.html">Əsas səhifə</a>
+            <div class="dropdown">
+                <span class="dropdown-title">Filiallarımız</span>
+                <div class="dropdown-content">
+                    <a href="azadliq.html">Azadlıq filialı</a>
+                    <a href="elmler.html">Elmlər filialı</a>
+                    <a href="nerimanov.html">Nərimanov filialı</a>
+                    <a href="nizami.html">Nizami filialı</a>
+                    <a href="xetai.html">Xətai filialı</a>
+                </div>
+            </div>
+            <a href="menyu.html">Menyu</a>
+            <a href="haqqimizda.html">Haqqımızda</a>
+            <a href="elaqe.html">Əlaqə</a>
+        </nav>
+        <div class="menu-header">
+            <a href="#soup">Şorba</a>
+            <a href="#esas">Əsas yemək</a>
+            <a href="#icki">İçki</a>
+            <a href="#desert">Desert</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <div class="cards">
+                <h2 id="soup">Şorbalar</h2>
+                <div class="card">
+                    <h4>Soupe à l'oignon</h4>
+                    <img src="food\Soupe à l’oignon.jpg" alt="">
+                    <p>Karamelləşdirilmiş soğan, mal bulyonu, qızardılmış çörək və pendir ilə</p>
+                    <p>Qiymət: 8 €</p>
+                    <button onclick="addToCart('Soupe à l\'oignon', 8)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Soupe de tomato</h4>
+                    <img src="food\Soupe de tomate.jpg" alt="">
+                    <p>Təzə pomidorlardan hazırlanmış klassik fransız pomidor şorbası</p>
+                    <p>Qiymət: 8 €</p>
+                    <button onclick="addToCart('Soupe de tomato', 8)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Soupe de champignons</h4>
+                    <img src="food\Soupe de champignons.jpg" alt="">
+                    <p>Təzə göbələklərdən hazırlanmış kremli və aromatik şorba.</p>
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Soupe de champignons', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Velouté de pommes de terre</h4>
+                    <img src="food\Velouté de pommes de terre.webp" alt="">
+                    <p>Kremli göbələk şorbası, yumşaq dad və ətirli ədviyyatlar ilə</p>
+                    <p>Qiymət: 7 €</p>
+                    <button onclick="addToCart('Velouté de pommes de terre', 7)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Bouillabaisse</h4>
+                    <img src="food\Bouillabaisse.jpg" alt="">
+                    <p>Dəniz məhsulları ilə zəngin Marsel üslublu balıq şorbası</p>
+                    <p>Qiymət: 14 €</p>
+                    <button onclick="addToCart('Bouillabaisse', 14)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Soupe de légumes</h4>
+                    <img src="food\Soupe de légumes.jpg" alt="">
+                    <p>Mövsümi tərəvəzlərdən hazırlanmış yüngül və sağlam şorba</p>
+                    <p>Qiymət: 5 €</p>
+                    <button onclick="addToCart('Soupe de légumes', 5)">Səbətə əlavə et</button>
+                </div>
+
+                <h2 id="esas">Əsas yeməklər</h2>
+                <div class="card">
+                    <h4>Coq au Vin</h4>
+                    <img src="food\Coq au Vin2.jpg" alt="">
+                    <p>Qırmızı şərabda bişirilmiş toyuq əti, göbələk və tərəvəzlərlə</p>
+                    <p>Qiymət: 18 €</p>
+                    <button onclick="addToCart('Coq au Vin', 18)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Boeuf Bourguignon</h4>
+                    <img src="food\Boeuf Bourguignon.jpg" alt="">
+                    <p>Bordo üslubunda qırmızı şərabda bişmiş mal əti, kök və soğan ilə</p>
+                    <p>Qiymət: 20 €</p>
+                    <button onclick="addToCart('Boeuf Bourguignon', 20)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Ratatouille</h4>
+                    <img src="food\Ratatouille.webp" alt="">
+                    <p>Badımcan, kabak, bibər və pomidordan hazırlanmış klassik tərəvəz yeməyi</p>
+                    <p>Qiymət: 12 €</p>
+                    <button onclick="addToCart('Ratatouille', 12)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Canard rôti</h4>
+                    <img src="food\Canard rôti.jpg" alt="">
+                    <p>Sobada qızardılmış ördək filesi, xüsusi sous ilə</p>
+                    <p>Qiymət: 22 €</p>
+                    <button onclick="addToCart('Canard rôti', 22)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Filet de saumon</h4>
+                    <img src="food\Filet de saumon.jpg" alt="">
+                    <p>Qril edilmiş qızılbalıq filesi, limonlu sous ilə</p>
+                    <p>Qiymət: 19 €</p>
+                    <button onclick="addToCart('Filet de saumon', 19)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Poulet à la crème</h4>
+                    <img src="food\Poulet à la crème.webp" alt="">
+                    <p>Kremli sousda bişirilmiş toyuq filesi, fransız üslubunda</p>
+                    <p>Qiymət: 16 €</p>
+                    <button onclick="addToCart('Poulet à la crème', 16)">Səbətə əlavə et</button>
+                </div>
+                <h2 id="icki">İçkilər</h2>
+                <h3>Soyuq içkilər</h3>
+                <div class="card">
+                    <h4>Təzə sıxılmış portağal şirəsi</h4>
+                    <img src="food\Təzə sıxılmış portağal şirəsi.jpg" alt="">
+                    <p>Qiymət: 5 €</p>
+                    <button onclick="addToCart('Təzə sıxılmış portağal şirəsi', 5)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Limonad</h4>
+                    <img src="food\Limonad.jpg" alt="">
+                    <p>Qiymət: 4 €</p>
+                    <button onclick="addToCart('Limonad', 4)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Sirab Qazlı/Qazsız</h4>
+                    <img src="food\sirab.jpg" alt="">
+                    <p>Qiymət: 2 €</p>
+                    <button onclick="addToCart('Sirab Qazlı/Qazsız', 2)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Sprite</h4>
+                    <img src="food\sprite.webp" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Sprite', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fanta</h4>
+                    <img src="food\fanta.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Fanta', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Coca Cola</h4>
+                    <img src="food\cola.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Coca Cola', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fusetea (Ananaslı)</h4>
+                    <img src="food\fusetea 1.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Fusetea (Ananaslı)', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fusetea (Qarpızlı)</h4>
+                    <img src="food\fusetea 2.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Fusetea (Qarpızlı)', 3)">Səbətə əlavə et</button>
+                </div>
+                <hr>
+                <h3>İsti içkilər</h3>
+                <div class="card">
+                    <h4>Espresso</h4>
+                    <img src="food\Espresso.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Espresso', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Americano</h4>
+                    <img src="food\Americano.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Americano', 3)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Cappuccino</h4>
+                    <img src="food\Cappuccino.jpg" alt="">
+                    <p>Qiymət: 4 €</p>
+                    <button onclick="addToCart('Cappuccino', 4)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Latte</h4>
+                    <img src="food\Latte.jpg" alt="">
+                    <p>Qiymət: 4 €</p>
+                    <button onclick="addToCart('Latte', 4)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fransız çayı</h4>
+                    <img src="food\Fransız çayı.jpg" alt="">
+                    <p>Qiymət: 3 €</p>
+                    <button onclick="addToCart('Fransız çayı', 3)">Səbətə əlavə et</button>
+                </div>
+                <hr>
+                <h3>Şərablar</h3>
+                <div class="card">
+                    <h4>Fransız ağ şərabı (qədəh)</h4>
+                    <img src="food\Fransız ağ şərabı (qədəh).jpg" alt="">
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Fransız ağ şərabı (qədəh)', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fransız qırmızı şərabı (qədəh)</h4>
+                    <img src="food\Fransız qirmizi şərabı (qədəh).jpg" alt="">
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Fransız qırmızı şərabı (qədəh)', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Rosé şərab (qədəh)</h4>
+                    <img src="food\Rosé şərab (qədəh).jpg" alt="">
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Rosé şərab (qədəh)', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Ev şərabı (qrafin)</h4>
+                    <img src="food\Ev şərabı (qrafin).jpg" alt="">
+                    <p>Qiymət: 15 €</p>
+                    <button onclick="addToCart('Ev şərabı (qrafin)', 15)">Səbətə əlavə et</button>
+                </div>
+                <hr>
+                <h3>Kokteyllər</h3>
+                <div class="card">
+                    <h4>Mojito</h4>
+                    <img src="food\Mojito.jpg" alt="">
+                    <p>Qiymət: 7 €</p>
+                    <button onclick="addToCart('Mojito', 7)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Martini</h4>
+                    <img src="food\Martini.jpg" alt="">
+                    <p>Qiymət: 8 €</p>
+                    <button onclick="addToCart('Martini', 8)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Aperol Spritz</h4>
+                    <img src="food\Aperol Spritz.jpg" alt="">
+                    <p>Qiymət: 7 €</p>
+                    <button onclick="addToCart('Aperol Spritz', 7)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>French 75</h4>
+                    <img src="food\French 75.jpg" alt="">
+                    <p>Qiymət: 9 €</p>
+                    <button onclick="addToCart('French 75', 9)">Səbətə əlavə et</button>
+                </div>
+                <hr>
+                <h2 id="desert">Desert</h2>
+                <div class="card">
+                    <h4>Mousse au chocolat</h4>
+                    <img src="food\Mousse au chocolat.jpg" alt="">
+                    <p>Yüngül və kremli şokolad musu</p>
+                    <p>Qiymət: 5 €</p>
+                    <button onclick="addToCart('Mousse au chocolat', 5)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Crème Brûlée</h4>
+                    <img src="food\Crème Brûlée.jpg" alt="">
+                    <p>Vanilli krem deserti</p>
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Crème Brûlée', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Crêpes Suzette</h4>
+                    <img src="food\Crêpes Suzette.jpg" alt="">
+                    <p>Portağal sousu və karamelli krep deserti</p>
+                    <p>Qiymət: 8 €</p>
+                    <button onclick="addToCart('Crêpes Suzette', 8)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Tarte aux fruits</h4>
+                    <img src="food\Tarte aux fruits.jpg" alt="">
+                    <p>Mövsüm meyvəli piroq</p>
+                    <p>Qiymət: 6 €</p>
+                    <button onclick="addToCart('Tarte aux fruits', 6)">Səbətə əlavə et</button>
+                </div>
+                <div class="card">
+                    <h4>Fondant au chocolat</h4>
+                    <img src="food\Fondant au chocolat.webp" alt="">
+                    <p>İçi axan şokoladlı lava tortu</p>
+                    <p>Qiymət: 7 €</p>
+                    <button onclick="addToCart('Fondant au chocolat', 7)">Səbətə əlavə et</button>
+                </div>
+            
+                <hr>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cart-container">
+                <div class="cart-header">
+                    <span class="cart-icon">🛒</span>
+                    <h2>Səbət</h2>
+                </div>
+                
+                <div id="cart-items" class="cart-items">
+                    <div class="cart-empty">Səbət boşdur</div>
+                </div>
+
+                <div id="cart-total" class="cart-total" style="display: none;">
+                    <div class="cart-total-row">
+                        <span>Ümumi:</span>
+                        <span class="cart-total-price" id="total-price">0 €</span>
+                    </div>
+                </div>
+
+                <div class="delivery-section">
+                    <h3>Çatdırılma</h3>
+                    <input type="text" id="address" placeholder="Ünvanınızı daxil edin">
+                    <button onclick="submitOrder()">Sifarişi təsdiqlə</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <p>📞 +994 12 345 67 89</p>
+        <p>© 2025 Ma Cocotte</p>
+        <p>✉️ info@macocotte.az</p>
+    </div>
+
+    <script src="menyu.js"></script>
+
+</body>
+
+</html>

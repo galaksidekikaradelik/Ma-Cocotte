@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Cocotte | Əsas səhifə</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="food\loqo3.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h1><a href="index.html">Ma Cocotte</a></h1>
+            </div>
+            <div class="language">
+                <button data-lang="az">AZ</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <a href="index.html">Əsas səhifə</a>
+            <div class="dropdown">
+                <span class="dropdown-title">Filiallarımız</span>
+                <div class="dropdown-content">
+                    <a href="azadliq.html">Azadlıq filialı</a>
+                    <a href="elmler.html">Elmlər filialı</a>
+                    <a href="nerimanov.html">Nərimanov filialı</a>
+                    <a href="nizami.html">Nizami filialı</a>
+                    <a href="xetai.html">Xətai filialı</a>
+                </div>
+            </div>
+            <a href="menyu.html">Menyu</a>
+            <a href="haqqimizda.html">Haqqımızda</a>
+            <a href="elaqe.html">Əlaqə</a>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <button class="prev">‹</button>
+        
+        <div class="carousel-track">
+            <img src="food\Petit Déjeuner.png" alt="Yemək 1">
+            <img src="food\22.webp" alt="Yemək 2">
+            <img src="food\33.webp" alt="Yemək 3">
+            <img src="food\Chef’s Choicee.jpg" alt="">
+            <img src="food\44.webp" alt="">
+            
+        </div>
+
+        <button class="next">›</button>
+        
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="sifaris-card">
+        <div class="card">
+            <img src="food\Quiche Lorraine.jpg" alt="Quiche Lorraine">
+            <h3>Quiche Lorraine</h3>
+            <p>Qiymət: 7€</p>
+            <button>Sifariş et</button>
+        </div>
+        <div class="card">
+            <img src="food\Coq au Vin2.jpg" alt="Coq au Vin">
+            <h3>Coq au Vin</h3>
+            <p>Qiymət: 18€</p>
+            <button>Sifariş et</button>
+        </div>
+        <div class="card">
+            <img src="food\Crème Brûlée.avif" alt="Crème Brûlée">
+            <h3>Crème Brûlée</h3>
+            <p>Qiymət: 6€</p>
+            <button>Sifariş et</button>
+        </div>
+        <div class="card">
+            <img src="food\Soupe à l’oignon.jpg" alt="Soupe à l’oignon">
+            <h3>Soupe à l’oignon</h3>
+            <p>Qiymət: 8€</p>
+            <button>Sifariş et</button>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="footer">
+        <p>📞 +994 12 345 67 89</p>
+        <p>© 2025 Ma Cocotte</p>
+        <p>✉️ info@macocotte.az</p>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2 id="modalProductName">Məhsul adı</h2>
+
+            <label>
+                Adınız:
+                <input type="text" id="name" name="name" >
+            </label>
+
+            <label>
+                Neçə ədəd:
+                <input type="number" id="quantity" min="1" value="1">
+            </label>
+
+            
+
+            <label>
+                Çatdırılma yeri:
+                <input type="text" id="adress" name="adress">
+            </label>
+
+            <button id="confirmOrder">Təsdiqlə</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
